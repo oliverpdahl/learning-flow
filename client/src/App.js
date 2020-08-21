@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import NavBarContainer from "./components/navBar/NavBarContainer";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutContainer from "./components/about/AboutContainer";
-import UserContainer from "./components/user/UserContainer";
+import UserContainer from "./components/user/userContainer.js";
 
 class App extends Component {
   componentDidMount() {
