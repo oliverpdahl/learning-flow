@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_21_124508) do
+ActiveRecord::Schema.define(version: 2020_08_21_121959) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -68,22 +68,4 @@ ActiveRecord::Schema.define(version: 2020_08_21_124508) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "drinks", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.string "steps"
-    t.string "source"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "ingredients", force: :cascade do |t|
-    t.integer "drink_id", null: false
-    t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["drink_id"], name: "index_ingredients_on_drink_id"
-  end
-
-  add_foreign_key "ingredients", "drinks"
 end
