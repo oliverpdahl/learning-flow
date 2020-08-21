@@ -34,3 +34,6 @@ kale_smoothie.ingredients.create(description: 'large handful frozen pineapple ch
 kale_smoothie.ingredients.create(description: 'medium-sized chunk ginger')
 kale_smoothie.ingredients.create(description: '1 tbsp cashew nuts')
 kale_smoothie.ingredients.create(description: '1 banana, optional')
+
+# #Compound Fractions
+cf = Path.create(complete: true, title: 'Learn Compound Fractions')
