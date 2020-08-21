@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+
 # #Compound Fractions
 cf = Path.create(complete: true, title: 'Learn Compound Fractions')
 
